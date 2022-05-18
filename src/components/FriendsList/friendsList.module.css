@@ -1,0 +1,45 @@
+.friends {
+    display: block;
+    box-sizing: border-box;
+    width: 300px;
+    margin: 100px auto;
+    box-shadow: 4px 5px 20px #000;
+    padding: 0;
+}
+
+.itemOnl {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 10px;
+      background: #95eaf0;
+}
+
+.itemOff {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 10px;
+      background: #f598c3;
+}
+
+.online {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.offline {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+.name {
+    color: gray;
+}

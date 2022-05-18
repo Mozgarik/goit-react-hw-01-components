@@ -1,0 +1,83 @@
+ul,
+li,
+a, 
+p {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.profile {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    background-color: #f0fafc;
+    box-shadow: 4px 5px 20px #000;
+    border: 1px solid gray;
+    margin-top: 30px;
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+
+.avatar {
+    
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+}
+
+.description {
+    display: block;
+}
+.stats {
+    display: flex;
+}
+
+.name {
+    text-align: center;
+    font-weight: 700;
+    font-size: 130%;
+    color: #3f4040;
+    margin: 10px;
+}
+
+.tag {
+    text-align: center;
+    font-weight: 600;
+    font-size: 120%;
+    color: #3f4040;
+    margin: 10px;
+}
+
+.location {
+    text-align: center;
+    font-weight: 600;
+    font-size: 110%;
+    color: #3f4040;
+    margin: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.item {
+    background: #def9ff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid silver;
+    width: 100%;
+}
+
+.label {
+ color: #3f4040;
+ font-weight: 500;
+}
+
+.followers {
+color: #3f4040;
+}
