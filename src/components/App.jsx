@@ -1,10 +1,9 @@
-import PropTypes from 'prop-types';
 import users from './Profile/user'
 import { Profile } from './Profile/Profile.jsx';
 import { Statistics } from './Statistic/Statistics.jsx';
 import { Friendlist } from './FriendsList/Friendlist.jsx';
 import { Transactions } from './Transactions/Transactions.jsx';
-
+import friends from './FriendsList/friends.json'
 
 
 export const App = () => {
@@ -20,7 +19,9 @@ export const App = () => {
     likes = {users.stats.likes}
     />
       <Statistics/>
-      <Friendlist/>
+      <Friendlist
+      friendsList = {friends}
+      />
       <Transactions/>
     </div>
     
@@ -28,12 +29,3 @@ export const App = () => {
 };
 
 
-Profile.propTypes = {
-  username: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  followers: PropTypes.number.isRequired,
-  views: PropTypes.number.isRequired,
-  likes: PropTypes.number.isRequired,
- }

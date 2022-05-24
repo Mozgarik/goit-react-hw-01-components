@@ -1,11 +1,11 @@
-import friends from './friends.json'
 import { FriendlistItem } from './FriendslistItem'
 import s from './friendsList.module.css'
+import PropTypes from 'prop-types';
 
-export const Friendlist = () => {
+export const Friendlist = ({friendsList}) => {
     return (
         <ul className={s.friends}>
-            {friends.map(el => {
+            {friendsList.map(el => {
                return <FriendlistItem 
                isOnline = {el.isOnline}
                avatar = {el.avatar}
@@ -16,3 +16,8 @@ export const Friendlist = () => {
         </ul>
     )
 } 
+
+
+Friendlist.propTypes = {
+   friendsList: PropTypes.array.isRequired
+   }
